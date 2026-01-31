@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/root.css">
+</head>
+<body>
+
+<header>
+    <h1>User Feedback Survey</h1>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="survey.html" class="active">Rate us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="page-layout">
+
+<!-- left side reviews -->
+    <aside class="side left">
+        <div class="angled ad">🔥 LIMITED OFFER 🔥</div>
+        <p class="review">⭐⭐⭐⭐⭐<br>""Best service ever." I would say." - Vespa Crabro </p>
+        <p class="review">⭐⭐⭐⭐<br>"Fast and easy to use." - Tourist</p>
+    </aside>
+
+    <main>
+        <form action="thankyou.html" method="post">
+
+<!-- identification -->
+            <section>
+                <h2>Personal Identification</h2>
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </section>
+
+<!-- ratings -->
+            <section>
+                <h2>Experience Rating</h2>
+
+                <fieldset>
+                    <legend>Overall Satisfaction</legend>
+                    <label><input type="radio" name="satisfaction" required> Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction"> Neutral</label>
+                    <label><input type="radio" name="satisfaction"> Unsatisfied</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which features did you use?</legend>
+                    <label><input type="checkbox"> Website Navigation</label>
+                    <label><input type="checkbox"> Customer Support</label>
+                    <label><input type="checkbox"> Online Forms</label>
+                    <label><input type="checkbox"> Mobile Access</label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="source">How did you hear about us?</label>
+                    <select id="source" required>
+                        <option value="">-- Select --</option>
+                        <option>Social Media</option>
+                        <option>Friend</option>
+                        <option>Advertisement</option>
+                        <option>Search Engine</option>
+                    </select>
+                </div>
+            </section>
+
+<!-- detailed feedback -->
+            <section>
+                <h2>Detailed Feedback</h2>
+
+                <div class="form-group">
+                    <label for="date">Date of Service</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="freq">Frequency of Use (1–30)</label>
+                    <input type="number" id="freq" min="1" max="30">
+                </div>
+
+                <div class="form-group">
+                    <label for="suggestions">Suggestions</label>
+                    <textarea id="suggestions" rows="6"
+                        placeholder="Your feedback here..."></textarea>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section class="actions">
+                <button type="submit">Send Feedback</button>
+                <button type="reset">Clear Form</button>
+                <a href="index.html" class="back-link">Back to Homepage</a>
+            </section>
+
+        </form>
+    </main>
+
+<!-- right side reviews -->
+    <aside class="side right">
+        <div class="angled ad">☕ TRY THE CARAMELLIA SPECIAL! ☕</div>
+        <p class="review">⭐⭐⭐⭐⭐<br>"I recommend this to everyone!" - Antoine Bautista</p>
+        <p class="review">⭐⭐⭐⭐<br>"Looks professional..." - A Regular </p>
+    </aside>
+
+</div>
+
+<footer>
+    <p>CodeDestroyers | ITS121-1L - AM11</p>
+</footer>
+
+</body>
+</html>

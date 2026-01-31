@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Account Registration Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="CSS/arp_styles.css">
+</head>
+<body class="webBody">
+	<header>
+		<h1 class="arp">Account Registration Page</h1>
+		<br>
+		<h2 class="titleArp">Kindly enter your basic account information below: </h2>
+	</header>
+
+	<form id="accountRegistration"> 
+		<label for="usname">Username:</label>
+		<input type="text" id="usname" name="usname" class="username" required> 
+
+		<br><br>
+
+		<label for="psword">Password:</label>
+		<input type="password" 
+		 	id="psword" 
+		 	name="psword"
+		 	class="passwrd"
+		 	pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z\d@$!%*?&]{4,}" 
+		 	title="Must contain at least one number, one uppercase, and lowercase letter, and at least 4 or more characters" 
+		required>
+
+		<br><br> 
+
+		<label for="conpsword">Confirm Password:</label>
+		<input type="password" 
+			id="conpsword" 
+			name="conpsword"
+			class="conpasswrd" 
+			title="Must contain at least one number, one uppercase, and lowercase letter, and at least 4 or more characters" 
+		required>
+
+		<br><br>
+
+		<input class="register" type="submit" value="Register"> 
+	</form>
+
+	<br>
+	<br>
+
+	<footer class="fooTer">codeDestroyers | ITS121-1L – AM11</footer>
+</body>
+</html>

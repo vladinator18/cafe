@@ -1,0 +1,98 @@
+/* menu.css */
+
+/* Coffee Menu Section */
+.menu {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-item {
+    background-color: var(--secondary-bg);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(148, 49, 49, 0.3);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #d2691e;
+}
+
+/* Marquee Styling */
+header marquee {
+    display: block;
+    background: var(--accent-gradient);
+    color: white;
+    font-weight: bold;
+    padding: 8px 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-items {
+        gap: 20px;
+    }
+    
+    .menu-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: 90%;
+    }
+    
+    .menu h2 {
+        font-size: 2rem;
+    }
+}
